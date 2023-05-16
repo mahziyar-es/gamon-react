@@ -1,0 +1,67 @@
+{
+  "name": "gamon-react",
+  "version": "1.0.0",
+  "description": "A simple, easy to use and highly customizable React UI component and css utility class plugin. Including components like inputs, carousel, cropper, picker, button, sheet or modal and more.",
+  "keywords": [
+    "React",
+    "react",
+    "react ui library",
+    "gamon",
+    "UI",
+    "UI component",
+    "component",
+    "modal",
+    "sheet",
+    "notification",
+    "input",
+    "carousel",
+    "cropper",
+    "picker",
+    "confirm",
+    "button"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "private": false,
+  "author": {
+    "name": "Mahziyar Esmaili",
+    "email": "mahziyar.esmaili.dev@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahziyar-es/gamon-react.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-image": "^2.1.1",
+    "@rollup/plugin-node-resolve": "^14.1.0",
+    "@rollup/plugin-typescript": "^8.5.0",
+    "@types/node": "^18.7.14",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "postcss": "^8.4.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^3.0.0",
+    "sass": "^1.55.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
