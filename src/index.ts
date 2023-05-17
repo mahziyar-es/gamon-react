@@ -23,6 +23,7 @@ export {default as Loading} from './components/Loading/Loading'
 export {default as Row} from './components/Grid/Row'
 export {default as Col} from './components/Grid/Col'
 export {default as TabBar} from './components/TabBar/TabBar'
+export {default as CustomClick} from './components/CustomClick/CustomClick'
 export {default as GrabScroll} from './components/GrabScroll/GrabScroll'
 export {default as Layout} from './components/Layout/Layout'
 
@@ -49,6 +50,7 @@ export * from './types/stepper.type'
 export * from './types/timepicker.type'
 export * from './types/loading.type'
 export * from './types/tabBar.type'
+export * from './types/customClick.type'
 
 
 // global methods

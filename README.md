@@ -21,17 +21,12 @@ including components like:
 - [`InputRadio`](#inputradio)
 - [`InputToggle`](#inputtoggle) => a simple toggle selector
 - [`Stepper`](#stepper) => stepper input for numbers
-- [`GrabScroll`](#grabscroll)
 
 
 some built in features (functions) like:
 - [`confirm`](#confirm) => get user confirmation on an action (like js confirm)
 - [`notify`](#notify) => notification message
-- [`sheetToggle`](#sheettoggle)
 
-and directives like:
-- [`v-long-click`](#v-long-click) => a directive to detect holding click (long click)
-- [`v-custom-click`](#v-custom-click) => a directive to detect both long and normal click together
 
 also, many utility css classes that support both LTR and RTL
 - [utility classes](#utility-classes)

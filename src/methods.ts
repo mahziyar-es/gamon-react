@@ -1,6 +1,6 @@
-import { ToggleAnimations } from "./types/general.type";
-import { NotifyTextBoxProps } from "./types/notify.type";
-import { SheetProps } from "./types/sheet.type";
+import type { ToggleAnimations } from "./types/general.type";
+import type { NotifyTextBoxProps } from "./types/notify.type";
+import type { SheetProps } from "./types/sheet.type";
 
 type SheetTypes = SheetProps['type']
 
