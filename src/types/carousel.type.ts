@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 
 interface CarouselProps {
     children ?: ReactNode,
+    model?: [number, (value: number) => void],
     itemsPerView ?: number,
     itemsPerSlide ?: number,
     eachItemMargin ?: number,

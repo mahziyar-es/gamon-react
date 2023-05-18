@@ -20,7 +20,7 @@ const Carousel = (props: CarouselProps) => {
     const mouseDown = useRef<boolean>(false)
     const startX = useRef<number>(0)
     const translation = useRef<number>(0)
-    const indexOfVisibleItem = useRef<number>(0)
+    const indexOfVisibleItem = useRef<number>(props.model?.[0] || 0)
     
     const [indexOfVisibleItemReactive, setIndexOfVisibleItemReactive] = useState<number>(0)
     const [indicatorsCount, setIndicatorsCount] = useState<number>(0)
@@ -48,6 +48,11 @@ const Carousel = (props: CarouselProps) => {
         }
         
     }, [])
+
+
+    useEffect(() => {
+        if (indexOfVisibleItemReactive != props.model?.[0]) props.model?.[1](indexOfVisibleItemReactive)
+    },[indexOfVisibleItemReactive])
 
 
     const addEventListeners = () => {
@@ -104,6 +109,8 @@ const Carousel = (props: CarouselProps) => {
             if(props.eachItemHeight)
                 child.style.height = props.eachItemHeight+'px'
         })
+
+        navigate(indexOfVisibleItem.current)
     }
 
 

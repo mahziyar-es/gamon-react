@@ -118,8 +118,11 @@ import { Button } from 'gamon-react'
 ### Carousel
 ```javascript
 import { Carousel } from 'gamon-react'
+import { useState } from 'react'
 
-<Carousel>
+const [indexOfVisibleSlide, setIndexOfVisibleSlide] = useState(0)
+
+<Carousel model={[indexOfVisibleSlide, setIndexOfVisibleSlide]}>
   <img src="img1.jpg" />
   <img src="img2.jpg" />
   <img src="img3.jpg" />
@@ -127,6 +130,8 @@ import { Carousel } from 'gamon-react'
 
  /**
   *  ====== PROPS ======
+  * 
+  *   model?: [number, (value: number) => void] => index of visible slide
   * 
   *   itemsPerView?: number => how many items should be shown in each slide
   * 
