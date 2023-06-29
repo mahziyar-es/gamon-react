@@ -26,7 +26,6 @@ export default [
         },
         ],
         plugins: [
-            // sass(),
             resolve(),
             commonjs(),
             typescript({ tsconfig: "./tsconfig.json" }),
