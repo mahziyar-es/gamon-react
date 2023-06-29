@@ -57,7 +57,7 @@ export * from './types/customClick.type'
 export {default as Gamon} from './methods'
 
 // global css
-// import './style/animation.css'
-// import './style/general.css'
+import './style/animation.css'
+import './style/general.css'
 // import './style/utils.scss'
 
